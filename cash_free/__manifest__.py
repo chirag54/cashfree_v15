@@ -22,5 +22,5 @@
     'price': 55.00,
     'currency': 'EUR',
     'uninstall_hook': 'uninstall_hook',
-    'license': ' OPL-1',
+    'license': 'OPL-1',
 }

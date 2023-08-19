@@ -43,8 +43,8 @@ class PaymentTransaction(models.Model):
         base_url = self.acquirer_id.get_base_url()
         partner_first_name, partner_last_name = payment_utils.split_partner_name(self.partner_name)
         converted_amount = payment_utils.to_minor_currency_units(self.amount, self.currency_id)
-        self.write({'cash_free_payment_link':pay_link,'cash_free_reference':"PT" + str(self.id)})
-        return_url_params = {'link_id': "PT" + str(self.id)}
+        self.write({'cash_free_payment_link':pay_link,'cash_free_reference':"PT-" + str(self.id)})
+        return_url_params = {'link_id': "PT-" + str(self.id)}
         rendering_values = {
             'address1': self.partner_address,
             'business': self.acquirer_id.display_as,
@@ -87,7 +87,7 @@ class PaymentTransaction(models.Model):
 
     def _cash_free_payment_link_payload(self):
         base_url = self.acquirer_id.get_base_url()
-        return_url_params = {'link_id': "PT" + str(self.id)}
+        return_url_params = {'link_id': "PT-" + str(self.id)}
         payload = {
             "customer_details": {
                 "customer_id":str(self.partner_id.id),
@@ -108,9 +108,9 @@ class PaymentTransaction(models.Model):
             "link_purpose": "order payment",
             "link_currency": 'INR',
             "link_amount": self.sale_order_ids.amount_total,
-            "link_id": "PT" + str(self.id)
+            "link_id": "PT-" + str(self.id)
         }
-        self.write({'cash_free_reference': "PT" + str(self.id)})
+        self.write({'cash_free_reference': "PT-" + str(self.id)})
         return payload
 
     def _cash_free_payment_link_header(self):
