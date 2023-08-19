@@ -13,6 +13,7 @@
         'views/payment_cashfree_template.xml',
         'data/payment_provider_data.xml',
     ],
+    'images': ['static/description/banner.png'],
     'application': False,
     'assets': {
         'web.assets_frontend': [
