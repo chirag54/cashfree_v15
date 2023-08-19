@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Payment Acquirer: cashfree',
+    'name': 'Payment Acquirer: Cashfree',
     'version': '1.0',
     'category': 'Accounting/Payment Providers',
     'sequence': 350,
@@ -13,8 +13,8 @@
         'views/payment_cashfree_template.xml',
         'data/payment_provider_data.xml',
     ],
-    'images': ['static/description/banner.png'],
-    'application': False,
+    'images': ['static/banner.png'],
+    'application': True,
     'assets': {
         'web.assets_frontend': [
 
