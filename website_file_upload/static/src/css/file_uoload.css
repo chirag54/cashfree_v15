@@ -1,0 +1,12 @@
+#display_preview
+{
+  display: none;
+}
+#close_preview
+{
+  display: none;
+}
+#button_inline
+{
+  display: inline;
+}

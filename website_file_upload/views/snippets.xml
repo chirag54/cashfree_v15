@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>  
+
+<template id="chirag_snippets_file_upload" name="File Upload builder" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="website_file_upload.s_images_upload" t-thumbnail="/website_file_upload/static/src/img/upload-file.svg"/>
+        </xpath>
+    </template>
+</odoo>

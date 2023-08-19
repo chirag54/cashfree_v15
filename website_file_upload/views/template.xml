@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<template id="s_images_upload" name="File Upload">
+    <section class=" pt24 pb24"  data-name="File Upload">
+        <div class="container">
+            <div class="row d-flex align-items-stretch">
+                <div class="pt16 pb16 o_colored_level col-lg-6">
+                <form action="/upload_document" method="post" enctype="multipart/form-data" >
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="row">
+                              <span class="col-4">
+                                <input type="file" class="form-control" id="attachment_1" multiple="false" name="filename"
+                                accept="image/*,application/pdf,video/*"/>
+                                <br/>
+                              </span>
+                              <span class="col-2">
+                                <button type="submit"  id="doc_upload_btn" class="btn btn-primary">Upload</button>
+                              </span>
+                              <span class="col-2">
+                                <button type="button" id="show_preview" class="btn btn-success">Preview
+                                </button>
+                                <div>
+                                <button id="close_preview" class="btn btn-danger">Close</button>
+                                </div>
+                              </span> 
+                        </div>                  
+                        <div class="row" style="padding:5px;" id="display_preview">
+                            <div style="clear:both">
+                            <iframe id="viewer" frameborder="0" scrolling="no" width="100%" height="200"></iframe>
+                            </div>                               
+                        </div>                                
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>
