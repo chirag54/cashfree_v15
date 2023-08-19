@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="payment_acquirer_form" model="ir.ui.view">
+        <field name="name">cashfree Acquirer Form</field>
+        <field name="model">payment.acquirer</field>
+        <field name="inherit_id" ref="payment.payment_acquirer_form"/>
+        <field name="arch" type="xml">
+            <group name="acquirer" position="inside">
+                <group attrs="{'invisible': [('provider', '!=', 'cashfree')]}">
+                    <field name="cashfree_app_id"
+                           attrs="{'required':[('provider', '=', 'cashfree'), ('state', '!=', 'disabled')]}"/>
+                    <field name="cashfree_secret_key"
+                           attrs="{'required':[('provider', '=', 'cashfree'), ('state', '!=', 'disabled')]}" password="True"/>
+                </group>
+                <group attrs="{'invisible': [('provider', '!=', 'cashfree')]}">
+                    <field name="cashfree_test_url" attrs="{'invisible':[('state', '==', 'enabled')]}"/>
+                    <field name="cashfree_production_url" attrs="{'invisible':[('state', '==', 'test')]}"/>
+                    <field name="cashfree_api_version" attrs="{'invisible':[('state', '==', 'disabled')]}"/>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
