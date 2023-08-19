@@ -18,5 +18,4 @@ class WebsiteSale(Base):
                 'type': 'binary',
                 'datas': base64.b64encode(file.read())
                 })
-            print(">>>>>>>",attachment_id)
 

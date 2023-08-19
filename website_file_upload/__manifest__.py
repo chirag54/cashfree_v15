@@ -1,9 +1,9 @@
 
 {
-    "name": "Website File Upload Snippet",
+    "name": "File Upload Snippet",
     "category": "Website",
     "summary": "eCommerce image Upload Category Snipped",
-    "version": "15.0.1.0.0",
+    'version': '1.0',
     "author": "Chirag Chauhan",
     'price': 10.00,
     'currency': 'EUR',
@@ -16,7 +16,6 @@
     "images": ["static/description/Home-My-Website.png"],
     "installable": True,
     "qweb": ["static/src/xml/*.xml"],
-    "development_status": "Alpha",
     "maintainers": ["chirag"],
     'assets': {
         'web.assets_frontend': [
