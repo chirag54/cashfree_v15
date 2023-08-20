@@ -4,7 +4,7 @@
     "category": "Website",
     "summary": "eCommerce image Upload Category Snipped",
     'version': '1.0',
-    "author": "Chirag Chauhan",
+    "author": "Chirag",
     'price': 6.00,
     'currency': 'EUR',
     "license": "OPL-1",
