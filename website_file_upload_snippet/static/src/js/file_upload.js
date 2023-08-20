@@ -1,4 +1,4 @@
-odoo.define("website_file_upload.file_upload", function (require) {
+odoo.define("website_file_upload_snippet.file_upload", function (require) {
     "use strict";
 
   $(document).on('click', '#show_preview', function(){

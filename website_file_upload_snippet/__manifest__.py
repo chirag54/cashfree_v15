@@ -19,8 +19,8 @@
     "maintainers": ["chirag"],
     'assets': {
         'web.assets_frontend': [
-            "/website_file_upload/static/src/css/file_uoload.css",
-            "/website_file_upload/static/src/js/file_upload.js",
+            "/website_file_upload_snippet/static/src/css/file_uoload.css",
+            "/website_file_upload_snippet/static/src/js/file_upload.js",
         ],
     },
 }
