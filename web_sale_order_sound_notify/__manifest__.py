@@ -5,10 +5,11 @@
         Send Sale Order notification messages to Admin with Sound""",
     "version": "16",
     "license": "AGPL-3",
+    "Versions":"15,16",
     "author": "Chirag Chauhan",
     "development_status": "",
     "website": "",
-    "depends": ["web","sale", "bus", "base", "mail","payment"],
+    "depends": ["sale","web","bus", "base", "mail","payment"],
     "images": ["static/description/notify.png"],
     "installable": True,
     "maintainers": ["chirag"],
@@ -17,6 +18,6 @@
             "/web_sale_order_sound_notify/static/src/js/services/notification_services.esm.js",
         ]
     },
-    'price': 28.00,
+    'price': 40.00,
     'currency': 'EUR',
 }
