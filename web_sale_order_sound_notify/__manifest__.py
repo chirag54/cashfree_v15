@@ -1,5 +1,6 @@
 {
     "name": "Web Sale Order Sound Notify",
+    "category":"web",
     "summary": """
         Send Sale Order notification messages to Admin with Sound""",
     "version": "16.0.1.0.1",
@@ -16,6 +17,6 @@
             "/web_sale_order_sound_notify/static/src/js/services/notification_services.esm.js",
         ]
     },
-    'price': 25.00,
+    'price': 28.00,
     'currency': 'EUR',
 }
