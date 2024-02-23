@@ -1,9 +1,9 @@
 {
     "name": "Web Sale Order Sound Notify",
-    "category":"web",
+    "category":"Website",
     "summary": """
         Send Sale Order notification messages to Admin with Sound""",
-    "version": "16.0.1.0.1",
+    "version": "16",
     "license": "AGPL-3",
     "author": "Chirag Chauhan",
     "development_status": "",
