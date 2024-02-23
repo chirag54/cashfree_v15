@@ -8,13 +8,14 @@
     "development_status": "",
     "website": "",
     "depends": ["web","sale", "bus", "base", "mail","payment"],
-    "images": ["/static/description/notify.png"],
+    "images": ["static/description/notify.png"],
+    "installable": True,
+    "maintainers": ["chirag"],
     "assets": {
         "web.assets_backend": [
             "/web_sale_order_sound_notify/static/src/js/services/notification_services.esm.js",
         ]
     },
-    "installable": True,
     'price': 25.00,
     'currency': 'EUR',
 }
