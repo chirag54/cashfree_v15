@@ -8,6 +8,7 @@
     "development_status": "",
     "website": "",
     "depends": ["web","sale", "bus", "base", "mail","payment"],
+    "images": ["/static/description/notify.png"],
     "assets": {
         "web.assets_backend": [
             "/web_sale_order_sound_notify/static/src/js/services/notification_services.esm.js",
